@@ -1,0 +1,1689 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(../css/fonts.css);
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 30, ../sass/screen.scss */
+body {
+  width: 100%;
+  background: #FFF;
+  font-family: "Proxima Nova" !important;
+  color: #5D5E5F;
+}
+
+/* line 36, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 40, ../sass/screen.scss */
+a:hover,
+a:focus {
+  cursor: pointer;
+}
+
+/* line 44, ../sass/screen.scss */
+li {
+  float: left;
+}
+
+/* line 47, ../sass/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 50, ../sass/screen.scss */
+img {
+  width: 100%;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+/* line 55, ../sass/screen.scss */
+a:focus,
+input:focus,
+select:focus,
+summary:focus {
+  border: none;
+  outline: none;
+}
+
+/* line 62, ../sass/screen.scss */
+.espacio-50 {
+  margin: 50px 0;
+}
+
+/*HEADER*/
+/* line 67, ../sass/screen.scss */
+.logo-header {
+  width: 265px;
+  height: auto;
+  float: left;
+}
+
+/* line 72, ../sass/screen.scss */
+.bg-rojo-header {
+  padding: 0 50px !important;
+  background: #FD1819;
+}
+
+/* line 76, ../sass/screen.scss */
+.menu-superior > ul {
+  float: right;
+}
+/* line 78, ../sass/screen.scss */
+.menu-superior > ul li {
+  padding: 0 30px;
+  line-height: 2.5;
+}
+
+/* line 83, ../sass/screen.scss */
+.bg-transparente {
+  width: 100%;
+  height: 130px;
+  padding: 30px 50px !important;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: 999;
+}
+/* line 90, ../sass/screen.scss */
+.bg-transparente nav {
+  float: right;
+}
+/* line 93, ../sass/screen.scss */
+.bg-transparente ul > li.menu {
+  display: inline-block;
+  line-height: 4.5;
+  position: relative;
+}
+/* line 98, ../sass/screen.scss */
+.bg-transparente ul > li.menu a:before {
+  width: 25px;
+  height: 3px;
+  float: left;
+  position: absolute;
+  top: 40px;
+  border-bottom: 5px solid #FD1819;
+  content: '';
+}
+/* line 107, ../sass/screen.scss */
+.bg-transparente li:hover,
+.bg-transparente li:active {
+  background: #FD1819;
+  color: #FFF;
+}
+/* line 112, ../sass/screen.scss */
+.bg-transparente li:hover > a {
+  color: #FFF;
+}
+/* line 115, ../sass/screen.scss */
+.bg-transparente li > a {
+  display: block;
+  padding: 0 24px;
+  font-size: .9375em;
+  font-weight: bold;
+  color: #5D5E5F;
+}
+/* line 122, ../sass/screen.scss */
+.bg-transparente li:active > a {
+  color: #FFF;
+}
+
+/* line 126, ../sass/screen.scss */
+.bg-transparente ul ul {
+  display: none;
+}
+
+/* line 129, ../sass/screen.scss */
+.bg-transparente ul li:hover ul {
+  width: 192px;
+  display: block;
+  box-sizing: border-box;
+}
+/* line 133, ../sass/screen.scss */
+.bg-transparente ul li:hover ul li {
+  width: 100%;
+  float: left;
+  padding: 0;
+}
+/* line 137, ../sass/screen.scss */
+.bg-transparente ul li:hover ul li a {
+  width: 100%;
+  line-height: 3;
+  color: #FFF;
+}
+/* line 142, ../sass/screen.scss */
+.bg-transparente ul li:hover ul li a:hover {
+  background: #FFF;
+  color: #FD1819;
+}
+
+/* line 148, ../sass/screen.scss */
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 30px !important;
+}
+
+/* line 152, ../sass/screen.scss */
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background: #323638;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 15px;
+}
+
+/*MENÚ SEGUROS*/
+/* line 163, ../sass/screen.scss */
+.menu-izq > ul > li {
+  float: none;
+  padding: 1em 30px;
+  background: #394247 url("../images/bullet-seguros.png") no-repeat;
+  background-position: 5% center;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  font-weight: bold;
+  color: #818E95;
+}
+/* line 172, ../sass/screen.scss */
+.menu-izq > ul > li li:last-child {
+  border-bottom: none;
+}
+
+/* line 177, ../sass/screen.scss */
+.menu-izq > ul li:hover {
+  color: #FFF;
+}
+/* line 180, ../sass/screen.scss */
+.menu-izq > ul li.banco:hover,
+.menu-izq > ul li.canales:hover,
+.menu-izq > ul li.banefe:hover {
+  background: #E30513 url("../images/bullet-seguros-hover.png") no-repeat;
+  background-position: 5% center;
+}
+/* line 186, ../sass/screen.scss */
+.menu-izq > ul li.select:hover {
+  background: #5B5B5F url("../images/bullet-seguros-hover.png") no-repeat;
+  background-position: 5% center;
+}
+/* line 190, ../sass/screen.scss */
+.menu-izq > ul li.advance:hover {
+  background: #8B7D6B url("../images/bullet-seguros-hover.png") no-repeat;
+  background-position: 5% center;
+}
+
+/* line 196, ../sass/screen.scss */
+.menu-izq > ul li.banco.active,
+.menu-izq > ul li.canales.active,
+.menu-izq > ul li.banefe.active {
+  background: #E30513 url("../images/bullet-seguros-hover.png") no-repeat;
+  background-position: 5% center;
+  color: #FFF;
+}
+/* line 203, ../sass/screen.scss */
+.menu-izq > ul li.select.active {
+  background: #5B5B5F url("../images/bullet-seguros-hover.png") no-repeat;
+  background-position: 5% center;
+  color: #FFF;
+}
+/* line 208, ../sass/screen.scss */
+.menu-izq > ul li.advance.active {
+  background: #8B7D6B url("../images/bullet-seguros-hover.png") no-repeat;
+  background-position: 5% center;
+  color: #FFF;
+}
+
+/* line 214, ../sass/screen.scss */
+.menu-izq > ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 217, ../sass/screen.scss */
+.tag {
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  top: -50px;
+  text-align: center;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+/* line 226, ../sass/screen.scss */
+.grid-11:hover .tag {
+  z-index: 9999;
+  opacity: 1;
+  transition: .3s linear;
+}
+
+/* line 231, ../sass/screen.scss */
+.vida .tag {
+  background: #BC4951;
+}
+
+/* line 234, ../sass/screen.scss */
+.salud .tag {
+  background: #6E5BA3;
+}
+
+/* line 237, ../sass/screen.scss */
+.productos-bancarios .tag {
+  background: #83BB5B;
+}
+
+/* line 240, ../sass/screen.scss */
+.hogar .tag {
+  background: #5FB28D;
+}
+
+/* line 243, ../sass/screen.scss */
+.auto .tag {
+  background: #24354B;
+}
+
+/* line 246, ../sass/screen.scss */
+.viaje .tag {
+  background: #D59B35;
+}
+
+/* line 249, ../sass/screen.scss */
+.consumo .tag {
+  background: #3A55A2;
+}
+
+/* line 252, ../sass/screen.scss */
+.hipotecario .tag {
+  background: #C06D53;
+}
+
+/* line 256, ../sass/screen.scss */
+.menu-seguros ul {
+  list-style: disc;
+}
+/* line 258, ../sass/screen.scss */
+.menu-seguros ul li:last-child {
+  border-bottom: none;
+}
+/* line 262, ../sass/screen.scss */
+.menu-seguros .grid-10 > ul > li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+}
+/* line 267, ../sass/screen.scss */
+.menu-seguros .grid-11 {
+  width: 11.25%;
+  float: left;
+  padding: 0 0 15px 0;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-size: 1em;
+  color: #FFF;
+}
+/* line 276, ../sass/screen.scss */
+.menu-seguros .grid-11 img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  left: 0;
+}
+/* line 286, ../sass/screen.scss */
+.menu-seguros .grid-11 span {
+  height: 50px;
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 296, ../sass/screen.scss */
+.menu-seguros .grid-11 ul {
+  width: 100%;
+  min-height: 250px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  z-index: 30;
+  opacity: 0;
+  list-style: none;
+}
+/* line 306, ../sass/screen.scss */
+.menu-seguros .grid-11 ul li {
+  width: 100%;
+  padding: 10px 5px;
+  background: #394247;
+  border-bottom: 1px solid #000;
+  line-height: 3;
+  box-sizing: border-box;
+  font-size: .8em;
+}
+/* line 317, ../sass/screen.scss */
+.menu-seguros .grid-11:hover > ul {
+  background: #000;
+  opacity: 1;
+  transition: .1s linear;
+}
+/* line 322, ../sass/screen.scss */
+.menu-seguros .vida {
+  background: #DD8589;
+  border-top: 10px solid #BC4951;
+}
+/* line 325, ../sass/screen.scss */
+.menu-seguros .vida ul {
+  border-bottom: 10px solid #BC4951;
+}
+/* line 327, ../sass/screen.scss */
+.menu-seguros .vida ul li:hover {
+  background: #BC4951;
+}
+/* line 332, ../sass/screen.scss */
+.menu-seguros .salud {
+  background: #948AB1;
+  border-top: 10px solid #6E5BA3;
+}
+/* line 335, ../sass/screen.scss */
+.menu-seguros .salud ul {
+  border-bottom: 10px solid #6E5BA3;
+}
+/* line 337, ../sass/screen.scss */
+.menu-seguros .salud ul li:hover {
+  background: #6E5BA3;
+}
+/* line 342, ../sass/screen.scss */
+.menu-seguros .productos-bancarios {
+  background: #ABCF95;
+  border-top: 10px solid #83BB5B;
+}
+/* line 345, ../sass/screen.scss */
+.menu-seguros .productos-bancarios ul {
+  border-bottom: 10px solid #83BB5B;
+}
+/* line 347, ../sass/screen.scss */
+.menu-seguros .productos-bancarios ul li:hover {
+  background: #83BB5B;
+}
+/* line 352, ../sass/screen.scss */
+.menu-seguros .hogar {
+  background: #93BDAA;
+  border-top: 10px solid #5FB28D;
+}
+/* line 355, ../sass/screen.scss */
+.menu-seguros .hogar ul {
+  border-bottom: 10px solid #5FB28D;
+}
+/* line 357, ../sass/screen.scss */
+.menu-seguros .hogar ul li:hover {
+  background: #5FB28D;
+}
+/* line 362, ../sass/screen.scss */
+.menu-seguros .auto {
+  background: #515D6C;
+  border-top: 10px solid #24354B;
+}
+/* line 365, ../sass/screen.scss */
+.menu-seguros .auto ul {
+  border-bottom: 10px solid #24354B;
+}
+/* line 367, ../sass/screen.scss */
+.menu-seguros .auto ul li:hover {
+  background: #24354B;
+}
+/* line 372, ../sass/screen.scss */
+.menu-seguros .viaje {
+  background: #E9C381;
+  border-top: 10px solid #D59B35;
+}
+/* line 375, ../sass/screen.scss */
+.menu-seguros .viaje ul {
+  border-bottom: 10px solid #D59B35;
+}
+/* line 377, ../sass/screen.scss */
+.menu-seguros .viaje ul li:hover {
+  background: #D59B35;
+}
+/* line 382, ../sass/screen.scss */
+.menu-seguros .consumo {
+  background: #6274A4;
+  border-top: 10px solid #3A55A2;
+}
+/* line 385, ../sass/screen.scss */
+.menu-seguros .consumo ul {
+  border-bottom: 10px solid #3A55A2;
+}
+/* line 387, ../sass/screen.scss */
+.menu-seguros .consumo ul li:hover {
+  background: #3A55A2;
+}
+/* line 392, ../sass/screen.scss */
+.menu-seguros .hipotecario {
+  background: #D28A74;
+  border-top: 10px solid #C06D53;
+}
+/* line 395, ../sass/screen.scss */
+.menu-seguros .hipotecario ul {
+  border-bottom: 10px solid #C06D53;
+}
+/* line 397, ../sass/screen.scss */
+.menu-seguros .hipotecario ul li:hover {
+  background: #C06D53;
+}
+
+/* line 404, ../sass/screen.scss */
+.menu-seguros .vida > ul > li.active {
+  background: #BC4951;
+}
+/* line 407, ../sass/screen.scss */
+.menu-seguros .salud ul li.active {
+  background: #6E5BA3;
+}
+/* line 410, ../sass/screen.scss */
+.menu-seguros .productos-bancarios ul li.active {
+  background: #83BB5B;
+}
+/* line 413, ../sass/screen.scss */
+.menu-seguros .hogar ul li.active {
+  background: #5FB28D;
+}
+/* line 416, ../sass/screen.scss */
+.menu-seguros .auto ul li.active {
+  background: #24354B;
+}
+/* line 419, ../sass/screen.scss */
+.menu-seguros .viaje ul li.active {
+  background: #D59B35;
+}
+/* line 422, ../sass/screen.scss */
+.menu-seguros .consumo ul li.active {
+  background: #3A55A2;
+}
+/* line 425, ../sass/screen.scss */
+.menu-seguros .hipotecario ul li.active {
+  background: #C06D53;
+}
+
+/* line 429, ../sass/screen.scss */
+.icon-seguro {
+  float: left;
+}
+/* line 431, ../sass/screen.scss */
+.icon-seguro img {
+  width: 115px;
+  height: auto;
+}
+
+/* line 436, ../sass/screen.scss */
+.texto-seguro {
+  margin-bottom: 30px;
+  font-size: 1em;
+  color: #4D5153;
+}
+/* line 440, ../sass/screen.scss */
+.texto-seguro span#btn-close {
+  cursor: pointer;
+}
+/* line 442, ../sass/screen.scss */
+.texto-seguro span#btn-close img {
+  width: 30px;
+  float: right;
+}
+/* line 447, ../sass/screen.scss */
+.texto-seguro h3 {
+  line-height: 5;
+}
+/* line 450, ../sass/screen.scss */
+.texto-seguro ul {
+  list-style: disc;
+}
+/* line 452, ../sass/screen.scss */
+.texto-seguro ul li {
+  margin: 0 0 30px 20px;
+}
+
+/* line 457, ../sass/screen.scss */
+span.titulo-seguro {
+  font-size: 1.5em;
+}
+
+/* line 461, ../sass/screen.scss */
+.titulo-seguro.vida {
+  color: #DD8589;
+}
+/* line 464, ../sass/screen.scss */
+.titulo-seguro.salud {
+  color: #948AB1;
+}
+/* line 467, ../sass/screen.scss */
+.titulo-seguro.productos-bancarios {
+  color: #ABCF95;
+}
+/* line 470, ../sass/screen.scss */
+.titulo-seguro.hogar {
+  color: #93BDAA;
+}
+/* line 473, ../sass/screen.scss */
+.titulo-seguro.auto {
+  color: #515D6C;
+}
+/* line 476, ../sass/screen.scss */
+.titulo-seguro.viaje {
+  color: #E9C381;
+}
+/* line 479, ../sass/screen.scss */
+.titulo-seguro.consumo {
+  color: #6274A4;
+}
+/* line 482, ../sass/screen.scss */
+.titulo-seguro.hipotecario {
+  color: #D28A74;
+}
+
+/* line 487, ../sass/screen.scss */
+ul.botones-texto-seguro li > a {
+  display: block;
+  padding: 15px 5px 15px 20px;
+  line-height: 3;
+  font-size: .8em;
+}
+/* line 493, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.vida {
+  background: #394247 url("../images/linea-vida.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 497, ../sass/screen.scss */
+ul.botones-texto-seguro a.vida:hover {
+  background: #BC4951 url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 501, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.salud {
+  background: #394247 url("../images/linea-salud.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 505, ../sass/screen.scss */
+ul.botones-texto-seguro a.salud:hover {
+  background: #6E5BA3 url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 509, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.bancarios {
+  background: #394247 url("../images/linea-productos-bancarios.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 513, ../sass/screen.scss */
+ul.botones-texto-seguro a.bancarios:hover {
+  background: #83BB5B url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 517, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.hogar {
+  background: #394247 url("../images/linea-hogar.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 521, ../sass/screen.scss */
+ul.botones-texto-seguro a.hogar:hover {
+  background: #5FB28D url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 525, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.auto {
+  background: #394247 url("../images/linea-auto.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 529, ../sass/screen.scss */
+ul.botones-texto-seguro a.auto:hover {
+  background: #24354B url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 533, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.viaje {
+  background: #394247 url("../images/linea-viaje.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 537, ../sass/screen.scss */
+ul.botones-texto-seguro a.viaje:hover {
+  background: #D59B35 url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 541, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.consumo {
+  background: #394247 url("../images/linea-consumo.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 545, ../sass/screen.scss */
+ul.botones-texto-seguro a.consumo:hover {
+  background: #3A55A2 url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 549, ../sass/screen.scss */
+ul.botones-texto-seguro li > a.hipotecario {
+  background: #394247 url("../images/linea-hipotecario.png") no-repeat;
+  background-position: 3% center;
+}
+/* line 553, ../sass/screen.scss */
+ul.botones-texto-seguro a.hipotecario:hover {
+  background: #C06D53 url("../images/linea-blanca.png") no-repeat;
+  background-position: 3% center;
+}
+
+/* line 558, ../sass/screen.scss */
+.linea-vida {
+  border-bottom: 5px solid #BC4951;
+}
+
+/* line 561, ../sass/screen.scss */
+.linea-salud {
+  border-bottom: 5px solid #6E5BA3;
+}
+
+/* line 564, ../sass/screen.scss */
+.linea-productos-bancarios {
+  border-bottom: 5px solid #83BB5B;
+}
+
+/* line 567, ../sass/screen.scss */
+.linea-hogar {
+  border-bottom: 5px solid #5FB28D;
+}
+
+/* line 570, ../sass/screen.scss */
+.linea-auto {
+  border-bottom: 5px solid #515D6C;
+}
+
+/* line 573, ../sass/screen.scss */
+.linea-viaje {
+  border-bottom: 5px solid #D59B35;
+}
+
+/* line 576, ../sass/screen.scss */
+.linea-consumo {
+  border-bottom: 5px solid #3A55A2;
+}
+
+/* line 579, ../sass/screen.scss */
+.linea-hipotecario {
+  border-bottom: 5px solid #C06D53;
+}
+
+/* line 582, ../sass/screen.scss */
+.banner-principal > img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 586, ../sass/screen.scss */
+.banners-secundarios {
+  padding: 15px 0;
+}
+
+/* line 589, ../sass/screen.scss */
+.videos-home {
+  padding: 30px 0;
+}
+/* line 591, ../sass/screen.scss */
+.videos-home h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #FD1819;
+}
+/* line 596, ../sass/screen.scss */
+.videos-home .portfolio-list .item {
+  position: relative;
+}
+/* line 599, ../sass/screen.scss */
+.videos-home .item:hover .detail-container {
+  opacity: 1;
+  transition: .3s;
+}
+/* line 603, ../sass/screen.scss */
+.videos-home .portfolio-list .detail-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: .3s;
+}
+/* line 610, ../sass/screen.scss */
+.videos-home a.ver-mas {
+  float: right;
+  margin: 10px 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #FD1819;
+}
+
+/*MÓDULOS DE FORMACIÓN*/
+/* line 619, ../sass/screen.scss */
+.breadcrumb {
+  margin-bottom: 50px;
+  padding: 15px 0;
+  background: #FD1819;
+  font-size: .75em;
+  color: #FFF;
+}
+/* line 625, ../sass/screen.scss */
+.breadcrumb i {
+  line-height: 0;
+  font-size: 2em;
+}
+/* line 629, ../sass/screen.scss */
+.breadcrumb ol > li {
+  padding: 0 15px;
+}
+
+/* line 633, ../sass/screen.scss */
+.barra-titulo {
+  padding: 15px 50px;
+  background: #FD1819;
+  line-height: 1.5;
+  font-size: 1.875em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+/* line 641, ../sass/screen.scss */
+.contenido-modulo,
+.telefonos-ayuda,
+.comunicados,
+.campanas {
+  padding: 30px 70px;
+  line-height: 1.5;
+}
+/* line 647, ../sass/screen.scss */
+.contenido-modulo h3,
+.telefonos-ayuda h3,
+.comunicados h3,
+.campanas h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* line 652, ../sass/screen.scss */
+.caja-videos {
+  margin: 50px 0;
+  padding: 30px;
+  background: #D8D9DD;
+}
+
+/* line 657, ../sass/screen.scss */
+.detail-container {
+  margin-top: 10px;
+  padding: 30px !important;
+  background: #EDEEF0 !important;
+  color: #323638 !important;
+}
+/* line 662, ../sass/screen.scss */
+.detail-container h4 {
+  height: 50px;
+}
+/* line 665, ../sass/screen.scss */
+.detail-container a {
+  width: 100%;
+  height: 36px;
+  display: block;
+  line-height: 3;
+  background: url("../images/descargar.png") no-repeat;
+  background-position: center right;
+  color: #323638;
+}
+/* line 674, ../sass/screen.scss */
+.detail-container a:hover {
+  background: url("../images/descargar-hover.png") no-repeat;
+  background-position: center right;
+  color: #FD1819;
+}
+
+/*OTROS PDF*/
+/* line 682, ../sass/screen.scss */
+.search {
+  margin-top: -50px;
+  padding: 10px 0;
+  background: #EEE;
+}
+/* line 686, ../sass/screen.scss */
+.search input {
+  width: 350px;
+  height: 30px;
+  padding-left: 50px;
+  float: right;
+  background: transparent url("../images/lupa.png") left no-repeat;
+  border: none;
+  font-size: 1.125em;
+}
+
+/* line 696, ../sass/screen.scss */
+table.otros-pdf {
+  display: table;
+  margin: auto;
+  border-collapse: collapse;
+}
+/* line 700, ../sass/screen.scss */
+table.otros-pdf tr:nth-child(even) > td {
+  background: #D1D1D1;
+}
+/* line 703, ../sass/screen.scss */
+table.otros-pdf tr > th {
+  padding: 10px 0;
+  background: #FD1819 url("../images/flecha-filtro.png") 85% no-repeat;
+  text-align: center;
+  color: #FFF;
+}
+/* line 709, ../sass/screen.scss */
+table.otros-pdf tr > td {
+  padding: 10px 0;
+  background: #EEE;
+  text-align: center;
+  color: #777;
+}
+/* line 715, ../sass/screen.scss */
+table.otros-pdf tr > td:first-child {
+  padding: 0;
+  text-align: left;
+}
+/* line 719, ../sass/screen.scss */
+table.otros-pdf tr > th:first-child {
+  background: #FD1819;
+}
+/* line 722, ../sass/screen.scss */
+table.otros-pdf tr > th:first-child,
+table.otros-pdf tr > td:first-child {
+  width: 15%;
+}
+
+/* line 727, ../sass/screen.scss */
+.limpiar {
+  padding: 10px !important;
+  padding-right: 70px !important;
+  background: #87868A;
+  text-align: right;
+  color: #FFF;
+}
+/* line 733, ../sass/screen.scss */
+.limpiar i {
+  font-size: 1.25em;
+}
+
+/* line 737, ../sass/screen.scss */
+.tag-nuevo {
+  width: 80px;
+  display: block;
+  padding: 10px 5px;
+  background: url("../images/tag-nuevo.png") left no-repeat;
+  font-size: .625em;
+  color: #FFF;
+}
+
+/* line 745, ../sass/screen.scss */
+.tag-terminado {
+  width: 80px;
+  display: block;
+  padding: 10px 5px;
+  background: url("../images/tag-terminado.png") left no-repeat;
+  font-size: .625em;
+  color: #FFF;
+}
+
+/* line 753, ../sass/screen.scss */
+.descargar a {
+  color: #5D5E5F;
+}
+/* line 755, ../sass/screen.scss */
+.descargar a img {
+  width: 16px;
+  display: block;
+  margin: auto;
+  filter: grayscale(100%);
+  transition: .1s linear;
+}
+
+/* line 763, ../sass/screen.scss */
+.descargar a:hover {
+  color: #FD1819;
+}
+/* line 765, ../sass/screen.scss */
+.descargar a:hover img {
+  color: #FD1819;
+  filter: grayscale(0);
+}
+
+/* line 770, ../sass/screen.scss */
+select {
+  width: 150px;
+  display: block;
+  margin: auto;
+  padding: 5px 10px;
+  background: transparent url("../images/bg-select.png") right no-repeat;
+  border: 1px solid #87868A;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-weight: bold;
+}
+
+/*TELÉFONOS DE ASISTENCIAS*/
+/* line 783, ../sass/screen.scss */
+span.rojo {
+  color: #FD1819;
+}
+
+/* line 786, ../sass/screen.scss */
+.fa-phone {
+  width: 70px;
+  height: 70px;
+  margin-top: 30px;
+  padding: 5px;
+  border: 3px solid #BF0811;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 70px !important;
+  color: #BF0811;
+}
+
+/* line 798, ../sass/screen.scss */
+.telefonos-ayuda h3 {
+  margin-bottom: 30px;
+  font-size: 1.875em;
+  font-weight: bold;
+  color: #FD1819;
+}
+/* line 804, ../sass/screen.scss */
+.telefonos-ayuda p {
+  font-size: .875em;
+}
+
+/* line 808, ../sass/screen.scss */
+table.empresas {
+  display: table;
+  margin: auto;
+  border-collapse: collapse;
+}
+/* line 812, ../sass/screen.scss */
+table.empresas tbody:nth-child(odd) {
+  background: #CCC;
+}
+/* line 815, ../sass/screen.scss */
+table.empresas tr > th {
+  width: 25%;
+  padding: 15px 0;
+  background: #BF0811;
+  border: 3px solid #FFF;
+  text-align: center;
+  color: #FFF;
+}
+/* line 823, ../sass/screen.scss */
+table.empresas tr > th:first-child {
+  border-top-left-radius: 10px;
+}
+/* line 826, ../sass/screen.scss */
+table.empresas tr > th:nth-child(2) {
+  width: 50%;
+}
+/* line 829, ../sass/screen.scss */
+table.empresas tr > th:last-child {
+  border-top-right-radius: 10px;
+}
+/* line 832, ../sass/screen.scss */
+table.empresas tr > td {
+  padding: 5px 15px;
+  line-height: 1;
+  background: #EEE;
+  border: 3px solid #FFF;
+  text-align: center;
+  color: #777;
+}
+/* line 840, ../sass/screen.scss */
+table.empresas tr > td:first-child {
+  background: #D1D1D1;
+  text-align: left;
+}
+/* line 844, ../sass/screen.scss */
+table.empresas ul, table.empresas li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 850, ../sass/screen.scss */
+table.empresas li {
+  text-align: left;
+}
+
+/* line 854, ../sass/screen.scss */
+table.asistencia {
+  display: table;
+  margin: auto;
+  border-collapse: collapse;
+}
+/* line 858, ../sass/screen.scss */
+table.asistencia tr > th {
+  width: 12%;
+  padding: 15px 10px;
+  background: #EEE;
+  border: 3px solid #FFF;
+}
+/* line 863, ../sass/screen.scss */
+table.asistencia tr > th img {
+  height: 30px;
+  display: block;
+  margin: auto;
+}
+/* line 869, ../sass/screen.scss */
+table.asistencia tr > th:first-child {
+  width: 10%;
+}
+/* line 872, ../sass/screen.scss */
+table.asistencia tr > th:nth-child(2) {
+  border-top-left-radius: 10px;
+}
+/* line 875, ../sass/screen.scss */
+table.asistencia tr > th:last-child {
+  border-top-right-radius: 10px;
+}
+/* line 878, ../sass/screen.scss */
+table.asistencia tr > td {
+  height: 35px;
+  padding: 5px;
+  line-height: 1;
+  background: #D1D1D1;
+  border: 3px solid #FFF;
+  text-align: center;
+  color: #777;
+}
+/* line 887, ../sass/screen.scss */
+table.asistencia tr > td:first-child {
+  background: #5D5E5F;
+  text-align: left;
+  color: #FFF;
+}
+/* line 892, ../sass/screen.scss */
+table.asistencia ul, table.asistencia li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 898, ../sass/screen.scss */
+table.asistencia li {
+  text-align: center;
+}
+
+/* line 902, ../sass/screen.scss */
+th.blanco {
+  background: #FFF !important;
+}
+
+/*.importante {
+	margin-top: 50px;
+	img {
+		width: 45px;
+		height: 45px;
+	}
+	h5 {
+		line-height: 2.5;
+	}
+}
+span.rojo-destacado {
+	font-weight: bold;
+	color: $rojo;
+}*/
+/*GLOSARIO*/
+/* line 921, ../sass/screen.scss */
+.search-glosario {
+  margin: 10px 0;
+  padding: 10px 0;
+  background: #CCC;
+}
+/* line 925, ../sass/screen.scss */
+.search-glosario input {
+  width: 100%;
+  height: 30px;
+  float: right;
+  background: transparent url("../images/lupa.png") right no-repeat;
+  border: none;
+}
+
+/* line 933, ../sass/screen.scss */
+.contenido-glosario {
+  display: table;
+  padding: 30px 50px;
+}
+
+/* line 937, ../sass/screen.scss */
+.letras {
+  width: 3%;
+  float: left;
+  margin-right: 20px;
+  padding: 30px 0;
+  background: #EEE;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 949, ../sass/screen.scss */
+.letras a {
+  display: block;
+  margin: 10px 0;
+  color: #87868A;
+}
+/* line 954, ../sass/screen.scss */
+.letras a:active {
+  text-decoration: underline;
+  text-decoration-color: #FD1819;
+}
+
+/* line 959, ../sass/screen.scss */
+.concepto {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* line 963, ../sass/screen.scss */
+.caja-roja {
+  display: block;
+  float: left;
+  padding: 7px 30px;
+  background: #FD1819;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  font-size: .875em;
+  color: #FFF;
+}
+
+/* line 978, ../sass/screen.scss */
+.caja-definicion {
+  padding: 50px 15px;
+  background: #EEE;
+  position: relative;
+  top: 10px;
+  left: 15px;
+  text-transform: uppercase;
+}
+
+/*VIDEOS*/
+/* line 988, ../sass/screen.scss */
+.contenido-video {
+  padding: 30px 100px;
+}
+
+/*ANEXOS DE APOYO*/
+/* line 993, ../sass/screen.scss */
+.contacto h3 {
+  margin: 15px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 998, ../sass/screen.scss */
+.nexos {
+  display: flex;
+  margin: 30px 0;
+}
+/* line 1001, ../sass/screen.scss */
+.nexos .nexo {
+  margin: 0 10px;
+  padding: 0 !important;
+  background: #EEE;
+  border: 1px solid #D1D1D1;
+}
+/* line 1007, ../sass/screen.scss */
+.nexos .grid-15 > img {
+  width: 30px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+}
+/* line 1013, ../sass/screen.scss */
+.nexos h4 {
+  margin: 15px 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: #FD1819;
+}
+/* line 1019, ../sass/screen.scss */
+.nexos ul {
+  float: left;
+  padding-left: 20px;
+}
+/* line 1022, ../sass/screen.scss */
+.nexos ul li {
+  float: left;
+  line-height: 2;
+  list-style-type: disc;
+}
+
+/* line 1029, ../sass/screen.scss */
+details th:last-child {
+  background: #87868A url("../images/flecha-tabla-abajo.png") no-repeat !important;
+  background-position: 97% center !important;
+}
+
+/* line 1033, ../sass/screen.scss */
+details[open] th:last-child {
+  background: #87868A url("../images/flecha-tabla-arriba.png") no-repeat;
+  background-position: 97% center;
+}
+
+/* line 1037, ../sass/screen.scss */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* line 1040, ../sass/screen.scss */
+table.contacto {
+  width: 100%;
+}
+/* line 1042, ../sass/screen.scss */
+table.contacto tr:nth-child(even) {
+  background: #EEE;
+}
+/* line 1045, ../sass/screen.scss */
+table.contacto tr:nth-child(odd) {
+  background: #FFF;
+}
+/* line 1048, ../sass/screen.scss */
+table.contacto th {
+  width: 25%;
+  padding: 15px 0;
+  background: #87868A;
+  text-align: center;
+  color: #FFF;
+}
+/* line 1055, ../sass/screen.scss */
+table.contacto td {
+  width: 25%;
+  padding: 0 10px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+/*COMUNICADOS*/
+/* line 1064, ../sass/screen.scss */
+.comunicado,
+.campana {
+  margin: 30px 0;
+  padding: 30px !important;
+  background: #EDEEf0;
+}
+/* line 1069, ../sass/screen.scss */
+.comunicado h3,
+.campana h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FD1819;
+}
+/* line 1074, ../sass/screen.scss */
+.comunicado h4,
+.campana h4 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #87868A;
+}
+/* line 1080, ../sass/screen.scss */
+.comunicado p,
+.campana p {
+  font-size: .875em;
+}
+/* line 1083, ../sass/screen.scss */
+.comunicado .leer-mas,
+.campana .leer-mas {
+  width: 100px;
+  float: right;
+  margin-top: 30px;
+  padding: 15px;
+  background: #BF0811;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+/* line 1093, ../sass/screen.scss */
+.comunicado .leer-mas:hover,
+.campana .leer-mas:hover {
+  background: #FD1819;
+}
+
+/* line 1098, ../sass/screen.scss */
+.comunicado:nth-child(odd) .grid-30 {
+  float: right;
+}
+/* line 1101, ../sass/screen.scss */
+.comunicado:nth-child(odd) .grid-70 {
+  float: left;
+}
+/* line 1103, ../sass/screen.scss */
+.comunicado:nth-child(odd) .grid-70 .leer-mas {
+  float: left;
+}
+
+/* line 1110, ../sass/screen.scss */
+.comunicados h3,
+.campanas h3 {
+  font-size: 2.75em;
+  font-weight: bold;
+  color: #FD1819;
+}
+/* line 1115, ../sass/screen.scss */
+.comunicados h4,
+.campanas h4 {
+  font-size: 2.125em;
+}
+/* line 1118, ../sass/screen.scss */
+.comunicados p,
+.campanas p {
+  margin: 15px 0;
+  font-size: 0.875em;
+}
+
+/* line 1123, ../sass/screen.scss */
+.side-comunicados,
+.side-campanas {
+  float: right !important;
+  margin: 20px 0 0 30px;
+  padding: 30px 20px !important;
+  background: #D8D9DD;
+}
+/* line 1129, ../sass/screen.scss */
+.side-comunicados img,
+.side-campanas img {
+  margin-bottom: 15px;
+}
+/* line 1132, ../sass/screen.scss */
+.side-comunicados h3,
+.side-campanas h3 {
+  color: #FD1819;
+}
+/* line 1135, ../sass/screen.scss */
+.side-comunicados h4,
+.side-campanas h4 {
+  margin-bottom: 30px;
+  color: #87868A;
+}
+/* line 1139, ../sass/screen.scss */
+.side-comunicados .btn-ver-todos,
+.side-campanas .btn-ver-todos {
+  width: 100px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  background: #FD1819;
+  text-align: center;
+}
+
+/* line 1148, ../sass/screen.scss */
+ul.pagination {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+/* line 1151, ../sass/screen.scss */
+ul.pagination li {
+  display: inline;
+}
+/* line 1154, ../sass/screen.scss */
+ul.pagination li > a {
+  float: left;
+  padding: 5px;
+  color: #5D5E5F;
+}
+/* line 1159, ../sass/screen.scss */
+ul.pagination li a:hover,
+ul.pagination li a.active {
+  color: #FD1819;
+}
+
+/* line 1164, ../sass/screen.scss */
+div.center {
+  text-align: center;
+}
+
+/*FOOTER*/
+/* line 1169, ../sass/screen.scss */
+.logo-footer {
+  width: 320px;
+  height: auto;
+  float: left;
+}
+
+/* line 1174, ../sass/screen.scss */
+.bg-rojo-footer {
+  padding: 0 50px !important;
+  background: #FD1819;
+}
+
+/*.bg-rojo-footer > a {
+	float: right;
+	margin: 0 30px;
+	line-height: 6;
+	font-size: .9375em;
+	font-weight: bold;
+}*/
+/* line 1185, ../sass/screen.scss */
+.bg-gris-footer {
+  padding: 0 50px !important;
+  background: #323638;
+}
+
+/* line 1189, ../sass/screen.scss */
+.bg-gris-footer > p {
+  line-height: 2.5;
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1210px) {
+  /* line 1197, ../sass/screen.scss */
+  .logo-header {
+    width: 200px;
+  }
+
+  /* line 1200, ../sass/screen.scss */
+  .tag {
+    padding: 5px;
+    top: -25px;
+    font-size: .7em;
+  }
+
+  /* line 1205, ../sass/screen.scss */
+  .menu-superior > ul > li {
+    padding: 0 10px;
+  }
+
+  /* line 1208, ../sass/screen.scss */
+  .bg-rojo-header,
+  .bg-rojo-footer {
+    padding: 0 25px !important;
+  }
+
+  /* line 1212, ../sass/screen.scss */
+  .bg-transparente {
+    height: 113px;
+    padding: 30px 25px !important;
+  }
+  /* line 1215, ../sass/screen.scss */
+  .bg-transparente ul > li.menu > a {
+    padding: 0 5px;
+    font-size: .7em;
+  }
+  /* line 1219, ../sass/screen.scss */
+  .bg-transparente ul > li.menu a:before {
+    top: 30px;
+  }
+  /* line 1222, ../sass/screen.scss */
+  .bg-transparente ul > li.menu > ul {
+    width: 132px;
+  }
+  /* line 1224, ../sass/screen.scss */
+  .bg-transparente ul > li.menu > ul a {
+    padding: 0 10px;
+    font-size: .7em;
+  }
+
+  /* line 1230, ../sass/screen.scss */
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: 10px !important;
+  }
+
+  /* line 1234, ../sass/screen.scss */
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: 10px !important;
+  }
+
+  /* line 1239, ../sass/screen.scss */
+  .menu-seguros .grid-10 > ul > li {
+    padding: .5em 20px;
+    font-size: .7em;
+  }
+  /* line 1243, ../sass/screen.scss */
+  .menu-seguros img {
+    margin-top: 10px !important;
+    margin-bottom: 5px;
+  }
+  /* line 1247, ../sass/screen.scss */
+  .menu-seguros .grid-11 {
+    padding: 0 0 10px 0;
+  }
+  /* line 1249, ../sass/screen.scss */
+  .menu-seguros .grid-11 img {
+    width: 35%;
+    top: -5px;
+  }
+  /* line 1253, ../sass/screen.scss */
+  .menu-seguros .grid-11 span {
+    height: 25px;
+    padding-top: 0;
+    font-size: .7em;
+  }
+  /* line 1258, ../sass/screen.scss */
+  .menu-seguros .grid-11 ul > li {
+    font-size: .65em;
+  }
+
+  /* line 1263, ../sass/screen.scss */
+  .icon-seguro img {
+    width: 100px;
+    height: auto;
+  }
+
+  /* line 1267, ../sass/screen.scss */
+  .texto-seguro h3 {
+    line-height: 4;
+  }
+
+  /* line 1270, ../sass/screen.scss */
+  .texto-seguro span#btn-close > img {
+    width: 15px;
+  }
+
+  /* line 1273, ../sass/screen.scss */
+  ul.botones-texto-seguro > li > a {
+    padding: 15px 0 15px 13px;
+    font-size: .55em;
+  }
+
+  /* line 1277, ../sass/screen.scss */
+  .limpiar {
+    padding-right: 25px !important;
+  }
+
+  /* line 1280, ../sass/screen.scss */
+  table.empresas,
+  table.asistencia {
+    width: 100%;
+    font-size: .625em;
+  }
+
+  /* line 1287, ../sass/screen.scss */
+  table.asistencia tr > th img {
+    height: 15px;
+  }
+  /* line 1291, ../sass/screen.scss */
+  table.asistencia tr > td {
+    padding: 5px 2px;
+  }
+}

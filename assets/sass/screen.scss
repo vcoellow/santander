@@ -1,0 +1,1295 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "../css/fonts.css";
+
+$rojo: #FD1819;
+$rojo-oscuro: #BF0811;
+$gris: #323638;
+$azul: #394247;
+$vida: #DD8589;
+$vida-hover: #BC4951;
+$salud: #948AB1;
+$salud-hover: #6E5BA3;
+$productos-bancarios: #ABCF95;
+$productos-bancarios-hover: #83BB5B;
+$hogar: #93BDAA;
+$hogar-hover: #5FB28D;
+$auto: #515D6C;
+$auto-hover: #24354B;
+$viaje: #E9C381;
+$viaje-hover: #D59B35;
+$consumo: #6274A4;
+$consumo-hover: #3A55A2;
+$hipotecario: #D28A74;
+$hipotecario-hover: #C06D53;
+
+body {
+	width:100%;
+	background:#FFF;
+	font-family: "Proxima Nova" !important;
+	color: #5D5E5F;
+}
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover,
+a:focus {
+	cursor: pointer;
+}
+li {
+	float: left;
+}
+strong {
+	font-weight: bold;
+}
+img {
+	width: 100%;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+a:focus,
+input:focus,
+select:focus,
+summary:focus {
+	border: none;
+	outline: none;
+}
+.espacio-50 {
+	margin: 50px 0;
+}
+
+/*HEADER*/
+.logo-header {
+	width: 265px;
+	height: auto;
+	float: left;
+}
+.bg-rojo-header {
+	padding: 0 50px !important;
+	background: $rojo;
+}
+.menu-superior > ul {
+	float: right;
+	li {
+		padding: 0 30px;
+		line-height: 2.5;
+	}
+}
+.bg-transparente {
+	width: 100%;
+	height: 130px;
+	padding: 30px 50px !important;
+	background: rgba(255, 255, 255, .8);
+	position: absolute;
+	z-index: 999;
+	nav {
+		float: right;
+	}
+	ul > li.menu {
+		display: inline-block;
+		line-height: 4.5;
+		position: relative;
+	}
+	ul > li.menu a:before {
+		width: 25px;
+		height: 3px;
+		float: left;
+		position: absolute;
+		top: 40px;
+		border-bottom: 5px solid $rojo;
+		content: '';
+	}
+	li:hover,
+	li:active {
+		background: $rojo;
+		color: #FFF;
+	}
+	li:hover > a {
+		color: #FFF;
+	}
+	li > a {
+		display: block;
+		padding: 0 24px;
+		font-size: .9375em;
+		font-weight: bold;
+		color: #5D5E5F;
+	}
+	li:active > a {
+		color: #FFF;
+	}
+}
+.bg-transparente ul ul {
+	display: none;
+}
+.bg-transparente ul li:hover ul {
+	width: 192px;
+	display: block;
+	box-sizing: border-box;
+	li {
+		width: 100%;
+		float: left;
+		padding: 0;
+		a {
+			width: 100%;
+			line-height: 3;
+			color: #FFF;
+		}
+		a:hover {
+			background: #FFF;
+			color: $rojo;
+		}
+	}
+}
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: 30px !important;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	background: $gris;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 15px;
+}
+
+/*MENÚ SEGUROS*/
+.menu-izq > ul > li {
+	float: none;
+	padding: 1em 30px;
+	background: $azul url('../images/bullet-seguros.png') no-repeat;
+	background-position: 5% center;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-weight: bold;
+	color: #818E95;
+	li:last-child {
+		border-bottom: none;
+	}
+}
+.menu-izq > ul {
+	li:hover {
+		color: #FFF;
+	}
+	li.banco:hover,
+	li.canales:hover,
+	li.banefe:hover {
+		background: #E30513 url('../images/bullet-seguros-hover.png') no-repeat;
+		background-position: 5% center;
+	}
+	li.select:hover {
+		background: #5B5B5F url('../images/bullet-seguros-hover.png') no-repeat;
+		background-position: 5% center;
+	}
+	li.advance:hover {
+		background: #8B7D6B url('../images/bullet-seguros-hover.png') no-repeat;
+		background-position: 5% center;
+	}
+}
+.menu-izq > ul {
+	li.banco.active,
+	li.canales.active,
+	li.banefe.active {
+		background: #E30513 url("../images/bullet-seguros-hover.png") no-repeat; 
+		background-position: 5% center;
+		color: #FFF;
+	}
+	li.select.active {
+		background: #5B5B5F url("../images/bullet-seguros-hover.png") no-repeat;
+		background-position: 5% center;
+		color: #FFF;
+	}
+	li.advance.active {
+		background: #8B7D6B url("../images/bullet-seguros-hover.png") no-repeat;
+		background-position: 5% center;
+		color: #FFF;
+	}
+}
+.menu-izq > ul li:last-child {
+	border-bottom: none;
+}
+.tag {
+	width: 100%;
+	padding: 15px;
+	position: absolute;
+	top: -50px;
+	text-align: center;
+	box-sizing: border-box;
+	opacity: 0;
+}
+.grid-11:hover .tag {
+	z-index: 9999;
+	opacity: 1;
+	transition: .3s linear;
+}
+.vida .tag {
+	background: $vida-hover;
+}
+.salud .tag {
+	background: $salud-hover;
+}
+.productos-bancarios .tag {
+	background: $productos-bancarios-hover;
+}
+.hogar .tag {
+	background: $hogar-hover;
+}
+.auto .tag {
+	background: $auto-hover;
+}
+.viaje .tag {
+	background: $viaje-hover;
+}
+.consumo .tag {
+	background: $consumo-hover;
+}
+.hipotecario .tag {
+	background: $hipotecario-hover;
+}
+.menu-seguros {
+	ul {
+		list-style: disc;
+		li:last-child {
+			border-bottom: none;
+		}
+	}
+	.grid-10 > ul > li {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: left;
+	}
+	.grid-11 {
+		width: 11.25%;
+		float: left;
+		padding: 0 0 15px 0;
+		box-sizing: border-box;
+		position: relative;
+		text-align: center;
+		font-size: 1em;
+		color: #FFF;
+		img {
+			width: 50%;
+			display: block;
+			margin: auto;
+			margin-bottom: 10px;
+			position: absolute;
+			top: -35px;
+			right: 0;
+			left: 0;
+		}
+		span {
+			height: 50px;
+			display: block;
+			margin: auto;
+			padding-top: 15px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		ul {
+			width: 100%;
+			min-height: 250px;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			position: absolute;
+			bottom: 0;
+			z-index: 30;
+			opacity: 0;
+			list-style: none;
+			li {
+				width: 100%;
+				padding: 10px 5px;
+				background: $azul;
+				border-bottom: 1px solid #000;
+				line-height: 3;
+				box-sizing: border-box;
+				font-size: .8em;
+			}
+		}
+	}
+	.grid-11:hover > ul {
+		background: #000;
+		opacity: 1;
+		transition: .1s linear;
+	}
+	.vida {
+		background: $vida;
+		border-top: 10px solid $vida-hover;
+		ul {
+			border-bottom: 10px solid $vida-hover;
+			li:hover {
+				background: $vida-hover;
+			}
+		}
+	}
+	.salud {
+		background: $salud;
+		border-top: 10px solid $salud-hover;
+		ul {
+			border-bottom: 10px solid $salud-hover;
+			li:hover {
+				background: $salud-hover;
+			}
+		}
+	}
+	.productos-bancarios {
+		background: $productos-bancarios;
+		border-top: 10px solid $productos-bancarios-hover;
+		ul {
+			border-bottom: 10px solid $productos-bancarios-hover;
+			li:hover {
+				background: $productos-bancarios-hover;
+			}
+		}
+	}
+	.hogar {
+		background: $hogar;
+		border-top: 10px solid $hogar-hover;
+		ul {
+			border-bottom: 10px solid $hogar-hover;
+			li:hover {
+				background: $hogar-hover;
+			}
+		}
+	}
+	.auto {
+		background: $auto;
+		border-top: 10px solid $auto-hover;
+		ul {
+			border-bottom: 10px solid $auto-hover;
+			li:hover {
+				background: $auto-hover;
+			}
+		}
+	}
+	.viaje {
+		background: $viaje;
+		border-top: 10px solid $viaje-hover;
+		ul {
+			border-bottom: 10px solid $viaje-hover;
+			li:hover {
+				background: $viaje-hover;
+			}
+		}
+	}
+	.consumo {
+		background: $consumo;
+		border-top: 10px solid $consumo-hover;
+		ul {
+			border-bottom: 10px solid $consumo-hover;
+			li:hover {
+				background: $consumo-hover;
+			}
+		}
+	}
+	.hipotecario {
+		background: $hipotecario;
+		border-top: 10px solid $hipotecario-hover;
+		ul {
+			border-bottom: 10px solid $hipotecario-hover;
+			li:hover {
+				background: $hipotecario-hover;
+			}
+		}
+	}
+}
+.menu-seguros {
+	.vida > ul > li.active {
+		background: $vida-hover;
+	}
+	.salud ul li.active {
+		background: $salud-hover;
+	}
+	.productos-bancarios ul li.active {
+		background: $productos-bancarios-hover;
+	}
+	.hogar ul li.active {
+		background: $hogar-hover;
+	}
+	.auto ul li.active {
+		background: $auto-hover;
+	}
+	.viaje ul li.active {
+		background: $viaje-hover;
+	}
+	.consumo ul li.active {
+		background: $consumo-hover;
+	}
+	.hipotecario ul li.active {
+		background: $hipotecario-hover;
+	}
+}
+.icon-seguro {
+	float: left;
+	img {
+		width: 115px;
+		height: auto;
+	}
+}
+.texto-seguro {
+	margin-bottom: 30px;
+	font-size: 1em;
+	color: #4D5153;
+	span#btn-close {
+		cursor: pointer;
+		img {
+			width: 30px;
+			float: right;
+		}
+	}
+	h3 {
+		line-height: 5;
+	}
+	ul {
+		list-style: disc;
+		li {
+			margin: 0 0 30px 20px;
+		}
+	}
+}
+span.titulo-seguro {
+	font-size: 1.5em;
+}
+.titulo-seguro {
+	&.vida{
+		color: $vida;
+	}	
+	&.salud{
+		color: $salud;
+	}	
+	&.productos-bancarios{
+		color: $productos-bancarios;
+	}	
+	&.hogar{
+		color: $hogar;
+	}
+	&.auto{
+		color: $auto;
+	}
+	&.viaje{
+		color: $viaje;
+	}
+	&.consumo{
+		color: $consumo;
+	}
+	&.hipotecario{
+		color: $hipotecario;
+	}
+}
+ul.botones-texto-seguro {
+	li > a {
+		display: block;
+		padding: 15px 5px 15px 20px;
+		line-height: 3;
+		font-size: .8em;
+	}
+	li > a.vida {
+		background: $azul url('../images/linea-vida.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.vida:hover {
+		background: $vida-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+	li > a.salud {
+		background: $azul url('../images/linea-salud.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.salud:hover {
+		background: $salud-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+	li > a.bancarios {
+		background: $azul url('../images/linea-productos-bancarios.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.bancarios:hover {
+		background: $productos-bancarios-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+	li > a.hogar {
+		background: $azul url('../images/linea-hogar.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.hogar:hover {
+		background: $hogar-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+	li > a.auto {
+		background: $azul url('../images/linea-auto.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.auto:hover {
+		background: $auto-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+	li > a.viaje {
+		background: $azul url('../images/linea-viaje.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.viaje:hover {
+		background: $viaje-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+	li > a.consumo {
+		background: $azul url('../images/linea-consumo.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.consumo:hover {
+		background: $consumo-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+	li > a.hipotecario {
+		background: $azul url('../images/linea-hipotecario.png') no-repeat;
+		background-position: 3% center;
+	}
+	a.hipotecario:hover {
+		background: $hipotecario-hover url('../images/linea-blanca.png') no-repeat;
+		background-position: 3% center;
+	}
+}
+.linea-vida {
+	border-bottom: 5px solid $vida-hover;
+}
+.linea-salud {
+	border-bottom: 5px solid $salud-hover;
+}
+.linea-productos-bancarios {
+	border-bottom: 5px solid $productos-bancarios-hover;
+}
+.linea-hogar {
+	border-bottom: 5px solid $hogar-hover;
+}
+.linea-auto {
+	border-bottom: 5px solid $auto;
+}
+.linea-viaje {
+	border-bottom: 5px solid $viaje-hover;
+}
+.linea-consumo {
+	border-bottom: 5px solid $consumo-hover;
+}
+.linea-hipotecario {
+	border-bottom: 5px solid $hipotecario-hover
+}
+.banner-principal > img {
+	width: 100%;
+	overflow: hidden;
+}
+.banners-secundarios {
+	padding: 15px 0;
+}
+.videos-home {
+	padding: 30px 0;
+	h3 {
+		margin-bottom: 15px;
+		font-weight: bold;
+		color: $rojo;
+	}
+	.portfolio-list .item {
+		position: relative;
+	}
+	.item:hover .detail-container {
+		opacity: 1;
+		transition: .3s;
+	}
+	.portfolio-list .detail-container {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		opacity: 0;
+		transition: .3s;
+	}
+	a.ver-mas {
+		float: right;
+		margin: 10px 0;
+		font-size: 1.3em;
+		font-weight: bold;
+		color: $rojo;
+	}
+}
+/*MÓDULOS DE FORMACIÓN*/
+.breadcrumb {
+	margin-bottom: 50px;
+	padding: 15px 0;
+	background: $rojo;
+	font-size: .75em;
+	color: #FFF;
+	i {
+		line-height: 0;
+		font-size: 2em;
+	}
+	ol > li {
+		padding: 0 15px;
+	}
+}
+.barra-titulo {
+	padding: 15px 50px;
+	background: $rojo;
+	line-height: 1.5;
+	font-size: 1.875em;
+	font-weight: bold;
+	color: #FFF;
+}
+.contenido-modulo,
+.telefonos-ayuda,
+.comunicados,
+.campanas {
+	padding: 30px 70px;
+	line-height: 1.5;
+	h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+}
+.caja-videos {
+	margin: 50px 0;
+	padding: 30px;
+	background: #D8D9DD;
+}
+.detail-container {
+	margin-top: 10px;
+	padding: 30px !important;
+	background: #EDEEF0 !important;
+	color: $gris !important;
+	h4 {
+		height: 50px;
+	}
+	a {
+		width: 100%;
+		height: 36px;
+		display: block;
+		line-height: 3;
+		background: url('../images/descargar.png') no-repeat;
+		background-position: center right;
+		color: $gris;
+	}
+	a:hover {
+		background: url('../images/descargar-hover.png') no-repeat;
+		background-position: center right;
+		color: $rojo;
+	}
+}
+
+/*OTROS PDF*/
+.search {
+	margin-top: -50px;
+	padding: 10px 0;
+	background: #EEE;
+	input {
+		width: 350px;
+		height: 30px;
+		padding-left: 50px;
+		float: right;
+		background: transparent url('../images/lupa.png') left no-repeat;
+		border: none;
+		font-size: 1.125em;
+	}
+}
+table.otros-pdf {
+	display: table;
+	margin: auto;
+	border-collapse: collapse;
+	tr:nth-child(even) > td {
+		background: #D1D1D1;
+	}
+	tr > th {
+		padding: 10px 0;
+		background: $rojo url('../images/flecha-filtro.png') 85% no-repeat;
+		text-align: center;
+		color: #FFF;
+	}
+	tr > td {
+		padding: 10px 0;
+		background: #EEE;
+		text-align: center;
+		color: #777;
+	}
+	tr > td:first-child {
+		padding: 0;
+		text-align: left;
+	}
+	tr > th:first-child {
+		background: $rojo;
+	}
+	tr > th:first-child,
+	tr > td:first-child {
+		width: 15%;
+	}
+}
+.limpiar {
+	padding: 10px !important;
+	padding-right: 70px !important;
+	background: #87868A;
+	text-align: right;
+	color: #FFF;
+	i {
+		font-size: 1.25em;
+	}
+}
+.tag-nuevo {
+	width: 80px;
+	display: block;
+	padding: 10px 5px;
+	background: url('../images/tag-nuevo.png') left no-repeat;
+	font-size: .625em;
+	color: #FFF;
+}
+.tag-terminado {
+	width: 80px;
+	display: block;
+	padding: 10px 5px;
+	background: url('../images/tag-terminado.png') left no-repeat;
+	font-size: .625em;
+	color: #FFF;
+}
+.descargar a {
+	color: #5D5E5F;
+	img {
+		width: 16px;
+		display: block;
+		margin: auto;
+		filter: grayscale(100%);
+		transition: .1s linear;
+	}
+}
+.descargar a:hover {
+	color: $rojo;
+	img {
+		color: $rojo;
+		filter: grayscale(0);
+	}
+}
+select {
+	width: 150px;
+	display: block;
+	margin: auto;
+	padding: 5px 10px;
+	background: transparent url('../images/bg-select.png') right no-repeat;
+	border: 1px solid #87868A;
+	border-radius: 0;
+	-webkit-appearance: none;
+	font-weight: bold;
+}
+
+/*TELÉFONOS DE ASISTENCIAS*/
+span.rojo {
+	color: $rojo;
+}
+.fa-phone {
+	width: 70px;
+	height: 70px;
+	margin-top: 30px;
+	padding: 5px;
+	border: 3px solid $rojo-oscuro;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 70px !important;
+	color: $rojo-oscuro;
+}
+.telefonos-ayuda {
+	h3 {
+		margin-bottom: 30px;
+		font-size: 1.875em;
+		font-weight: bold;
+		color: $rojo;
+	}
+	p {
+		font-size: .875em;
+	}
+}
+table.empresas {
+	display: table;
+	margin: auto;
+	border-collapse: collapse;
+	tbody:nth-child(odd) {
+		background: #CCC;
+	}
+	tr > th {
+		width: 25%;
+		padding: 15px 0;
+		background: $rojo-oscuro;
+		border: 3px solid #FFF;
+		text-align: center;
+		color: #FFF;
+	}
+	tr > th:first-child {
+		border-top-left-radius: 10px;
+	}
+	tr > th:nth-child(2) {
+		width: 50%;
+	}
+	tr > th:last-child {
+		border-top-right-radius: 10px;
+	}
+	tr > td {
+		padding: 5px 15px;
+		line-height: 1;
+		background: #EEE;
+		border: 3px solid #FFF;
+		text-align: center;
+		color: #777;
+	}
+	tr > td:first-child {
+		background: #D1D1D1;
+		text-align: left;
+	}
+	ul, li {
+		float: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		text-align: left;
+	}
+}
+table.asistencia {
+	display: table;
+	margin: auto;
+	border-collapse: collapse;
+	tr > th {
+		width: 12%;
+		padding: 15px 10px;
+		background: #EEE;
+		border: 3px solid #FFF;
+		img {
+			height: 30px;
+			display: block;
+			margin: auto;
+		}
+	}
+	tr > th:first-child {
+		width: 10%;
+	}
+	tr > th:nth-child(2) {
+		border-top-left-radius: 10px;
+	}
+	tr > th:last-child {
+		border-top-right-radius: 10px;
+	}
+	tr > td {
+		height: 35px;
+		padding: 5px;
+		line-height: 1;
+		background: #D1D1D1;
+		border: 3px solid #FFF;
+		text-align: center;
+		color: #777;
+	}
+	tr > td:first-child {
+		background: #5D5E5F;
+		text-align: left;
+		color: #FFF;
+	}
+	ul, li {
+		float: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		text-align: center;
+	}
+}
+th.blanco {
+	background: #FFF !important;
+}
+/*.importante {
+	margin-top: 50px;
+	img {
+		width: 45px;
+		height: 45px;
+	}
+	h5 {
+		line-height: 2.5;
+	}
+}
+span.rojo-destacado {
+	font-weight: bold;
+	color: $rojo;
+}*/
+
+/*GLOSARIO*/
+.search-glosario {
+	margin: 10px 0;
+	padding: 10px 0;
+	background: #CCC;
+	input {
+		width: 100%;
+		height: 30px;
+		float: right;
+		background: transparent url('../images/lupa.png') right no-repeat;
+		border: none;
+	}
+}
+.contenido-glosario {
+	display: table;
+	padding: 30px 50px;
+}
+.letras {
+	width: 3%;
+	float: left;
+	margin-right: 20px;
+	padding: 30px 0;
+	background: #EEE;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	a {
+		display: block;
+		margin: 10px 0;
+		color: #87868A;
+	}
+	a:active {
+		text-decoration: underline;
+		text-decoration-color: $rojo;
+	}
+}
+.concepto {
+	margin-bottom: 30px;
+	position: relative;
+}
+.caja-roja {
+	display: block;
+	float: left;
+	padding: 7px 30px;
+	background: $rojo;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: relative;
+	z-index: 5;
+	text-align: center;
+	font-size: .875em;
+	color: #FFF;
+}
+.caja-definicion {
+	padding: 50px 15px;
+	background: #EEE;
+	position: relative;
+	top: 10px;
+	left: 15px;
+	text-transform: uppercase;
+}
+
+/*VIDEOS*/
+.contenido-video {
+	padding: 30px 100px;
+}
+
+/*ANEXOS DE APOYO*/
+.contacto h3 {
+	margin: 15px 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+.nexos {
+	display: flex;
+	margin: 30px 0;
+	.nexo {
+		margin: 0 10px;
+		padding: 0 !important;
+		background: #EEE;
+		border: 1px solid #D1D1D1;
+	}
+	.grid-15 > img {
+		width: 30px;
+		display: block;
+		margin: auto;
+		margin-top: 15px;
+	}
+	h4 {
+		margin: 15px 0;
+		font-size: 1em;
+		font-weight: bold;
+		color: $rojo;
+	}
+	ul {
+		float: left;
+		padding-left: 20px;
+		li {
+			float: left;
+			line-height: 2;
+			list-style-type: disc;
+		}
+	}
+}
+details th:last-child {
+	background: #87868A url('../images/flecha-tabla-abajo.png') no-repeat !important;
+	background-position: 97% center !important;
+}
+details[open] th:last-child {
+	background: #87868A url('../images/flecha-tabla-arriba.png') no-repeat;
+	background-position: 97% center;
+}
+summary::-webkit-details-marker {
+	display: none;
+}
+table.contacto {
+	width: 100%;
+	tr:nth-child(even) {
+		background: #EEE;
+	}
+	tr:nth-child(odd) {
+		background: #FFF;
+	}
+	th {
+		width: 25%;
+		padding: 15px 0;
+		background: #87868A;
+		text-align: center;
+		color: #FFF;
+	}
+	td {
+		width: 25%;
+		padding: 0 10px;
+		line-height: 2.5;
+		text-align: center;
+	}
+}
+
+/*COMUNICADOS*/
+.comunicado,
+.campana {
+	margin: 30px 0;
+	padding: 30px !important;
+	background: #EDEEf0;
+	h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+		color: $rojo;
+	}
+	h4 {
+		margin-bottom: 30px;
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #87868A;
+	}
+	p {
+		font-size: .875em;
+	}
+	.leer-mas {
+		width: 100px;
+		float: right;
+		margin-top: 30px;
+		padding: 15px;
+		background: $rojo-oscuro;
+		text-align: center;
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+	.leer-mas:hover {
+		background: $rojo;
+	}
+}
+.comunicado:nth-child(odd) {
+	.grid-30 {
+		float: right;
+	}
+	.grid-70 {
+		float: left;
+		.leer-mas {
+			float: left;
+		}
+	}
+}
+.comunicados,
+.campanas {
+	h3 {
+		font-size: 2.75em;
+		font-weight: bold;
+		color: $rojo;
+	}
+	h4 {
+		font-size: 2.125em;
+	}
+	p {
+		margin: 15px 0;
+		font-size: 0.875em;
+	}
+}
+.side-comunicados,
+.side-campanas {
+	float: right !important;
+	margin: 20px 0 0 30px;
+	padding: 30px 20px !important;
+	background: #D8D9DD;
+	img {
+		margin-bottom: 15px;
+	}
+	h3 {
+		color: $rojo;
+	}
+	h4 {
+		margin-bottom: 30px;
+		color: #87868A;
+	}
+	.btn-ver-todos {
+		width: 100px;
+		display: block;
+		margin: auto;
+		padding: 15px;
+		background: $rojo;
+		text-align: center;
+	}
+}
+ul.pagination {
+	display: inline-block;
+	margin-bottom: 50px;
+	li {
+		display: inline;
+	}
+	li > a {
+		float: left;
+		padding: 5px;
+		color: #5D5E5F;
+	}
+	li a:hover,
+	li a.active {
+		color: $rojo;
+	}
+}
+div.center {
+	text-align: center;
+}
+
+/*FOOTER*/
+.logo-footer {
+	width: 320px;
+	height: auto;
+	float: left;
+}
+.bg-rojo-footer {
+	padding: 0 50px !important;
+	background: $rojo;
+}
+/*.bg-rojo-footer > a {
+	float: right;
+	margin: 0 30px;
+	line-height: 6;
+	font-size: .9375em;
+	font-weight: bold;
+}*/
+.bg-gris-footer {
+	padding: 0 50px !important;
+	background: $gris;
+}
+.bg-gris-footer > p {
+	line-height: 2.5;
+	font-size: 1em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1210px) {
+	.logo-header {
+		width: 200px;
+	}
+	.tag {
+		padding: 5px;
+		top: -25px;
+		font-size: .7em;
+	}
+	.menu-superior > ul > li {
+		padding: 0 10px;
+	}
+	.bg-rojo-header,
+	.bg-rojo-footer {
+		padding: 0 25px !important;
+	}
+	.bg-transparente {
+		height: 113px;
+		padding: 30px 25px !important;
+		ul > li.menu > a {
+			padding: 0 5px;
+			font-size: .7em;
+		}
+		ul > li.menu a:before {
+			top: 30px;
+		}
+		ul > li.menu > ul {
+			width: 132px;
+			a {
+				padding: 0 10px;
+				font-size: .7em;
+			}
+		}
+	}
+	.swiper-button-prev,
+	.swiper-container-rtl .swiper-button-next {
+		left: 10px !important;
+	}
+	.swiper-button-next,
+	.swiper-container-rtl .swiper-button-prev {
+		right: 10px !important;
+	}
+	.menu-seguros {
+		.grid-10 > ul > li {
+			padding: .5em 20px;
+			font-size: .7em;
+		}
+		img {
+			margin-top: 10px !important;
+			margin-bottom: 5px;
+		}
+		.grid-11 {
+			padding: 0 0 10px 0;
+			img {
+				width: 35%;
+				top: -5px;
+			}
+				span {
+				height: 25px;
+				padding-top: 0;
+				font-size: .7em;
+			}
+			ul > li {
+				font-size: .65em;
+			}
+		}
+	}
+	.icon-seguro img {
+		width: 100px;
+		height: auto;
+	}
+	.texto-seguro h3 {
+		line-height: 4;
+	}
+	.texto-seguro span#btn-close > img {
+		width: 15px;
+	}
+	ul.botones-texto-seguro > li > a {
+		padding: 15px 0 15px 13px;
+		font-size: .55em;
+	}
+	.limpiar {
+		padding-right: 25px !important;
+	}
+	table.empresas,
+	table.asistencia {
+		width: 100%;
+		font-size: .625em;
+	}
+	table.asistencia {
+		tr > th {
+			img {
+				height: 15px;
+			}
+		}
+		tr > td {
+			padding: 5px 2px;
+		}
+	}
+}
